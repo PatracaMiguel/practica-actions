@@ -20,8 +20,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Verificar estructura
+        run: ls -la CalculadoraAcciones/src/
+
       - name: Compilar código
-        run: javac -d . src/*.java
+        run: javac -d . CalculadoraAcciones/src/*.java
 
       - name: Ejecutar pruebas
         run: java -cp . CalculadoraTest
