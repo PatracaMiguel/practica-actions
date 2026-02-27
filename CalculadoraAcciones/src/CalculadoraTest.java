@@ -8,6 +8,8 @@ public class CalculadoraTest {
         if (calc.sumar(-2, 7) == 5) pruebasPasadas++;
         if (calc.restar(10, 4) == 6) pruebasPasadas++;
         if (calc.restar(5, -3) == 8) pruebasPasadas++;
+        if (calc.multiplicar(2, 3) == 6) pruebasPasadas++;
+        if (calc.multiplicar(5, -2) == 10) pruebasPasadas++;
         
         if (pruebasPasadas == pruebasTotales) {
             System.exit(0);
